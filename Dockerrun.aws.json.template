@@ -3,21 +3,21 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${APPLICATION_NAME}-client",
+      "image": "519126192369.dkr.ecr.ap-northeast-2.amazonaws.com/test-client",
       "hostname": "client",
       "essential": false,
       "memory": 256
     },
     {
       "name": "api",
-      "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${APPLICATION_NAME}-api",
+      "image": "519126192369.dkr.ecr.ap-northeast-2.amazonaws.com/test-api",
       "hostname": "api",
       "essential": false,
       "memory": 128
     },
     {
       "name": "nginx",
-      "image": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${APPLICATION_NAME}-nginx",
+      "image": "519126192369.dkr.ecr.ap-northeast-2.amazonaws.com/test-nginx",
       "hostname": "nginx",
       "essential": true,
       "portMappings": [
